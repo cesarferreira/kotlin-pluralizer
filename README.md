@@ -3,8 +3,6 @@
 
 **kotlin extension** to **pluralize** and **singularize** strings!
 
-### Show some :heart:
-[![GitHub followers](https://img.shields.io/github/followers/cesarferreira.svg?style=social&label=Follow)](https://github.com/cesarferreira/kotlin-pluralizer)   [![Twitter Follow](https://img.shields.io/twitter/follow/cesarmcferreira.svg?style=social)](https://twitter.com/cesarmcferreira)
 
 ## Usage
 
@@ -24,11 +22,12 @@
 
 ```
 
-
 ## Install
 
 TODO
 
+### Show some :heart:
+[![GitHub followers](https://img.shields.io/github/followers/cesarferreira.svg?style=social&label=Follow)](https://github.com/cesarferreira/kotlin-pluralizer)   [![Twitter Follow](https://img.shields.io/twitter/follow/cesarmcferreira.svg?style=social)](https://twitter.com/cesarmcferreira)
 
 ## Contributing
 I welcome and encourage all pull requests. It usually will take me within 24-48 hours to respond to any issue or request. Here are some basic rules to follow to ensure timely addition of your request:
