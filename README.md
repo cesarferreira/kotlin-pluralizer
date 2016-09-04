@@ -49,7 +49,7 @@ I welcome and encourage all pull requests. It usually will take me within 24-48 
   6. Have fun!
 
 
-  ## Credits
+## Credits
 
   The pluralize and singularize methods are based on the code found in the following places.
 
