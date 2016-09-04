@@ -1,4 +1,4 @@
 <resources>
 	<string name="app_name">Pluralize</string>
-	<string name="title_activity_hello">HelloActivity</string>
+	<string name="title_activity_hello">Pluralize</string>
 </resources>

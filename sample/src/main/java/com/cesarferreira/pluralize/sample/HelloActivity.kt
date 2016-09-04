@@ -1,12 +1,11 @@
 package com.cesarferreira.pluralize.sample
 
 import android.os.Bundle
-import android.support.design.widget.FloatingActionButton
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
-import android.util.Log
 import com.cesarferreira.pluralize.pluralize
 import com.cesarferreira.pluralize.singularize
+import kotlinx.android.synthetic.main.content_hello.*
 
 class HelloActivity : AppCompatActivity() {
 
@@ -16,15 +15,24 @@ class HelloActivity : AppCompatActivity() {
         val toolbar = findViewById(R.id.toolbar) as Toolbar
         setSupportActionBar(toolbar)
 
-        val fab = findViewById(R.id.fab) as FloatingActionButton
-        fab.setOnClickListener({
-            view ->
-            Log.d("TAG", "person".pluralize())
-            Log.d("TAG", "banana".pluralize())
-            Log.d("TAG", "woman".pluralize())
-            Log.d("TAG", "women".singularize())
+        val singulars = arrayOf("person", "banana", "woman")
 
-        })
+        for (item in singulars) {
+            concat("$item -> pluralize -> ${item.pluralize()}")
+        }
+
+        concat("")
+        concat("")
+
+        val plurals = arrayOf("words", "octopi", "sheep")
+
+        for (item in plurals) {
+            concat("$item -> singularize -> ${item.singularize()}")
+        }
+    }
+
+    fun concat(str: String) {
+        centerTextView.append(str + "\n")
     }
 
 }
