@@ -1,19 +1,4 @@
-
-group "$ext_groupId"
-version "$ext_version"
-
-publishing {
-  publications {
-    MyPublication(MavenPublication) {
-      from components.java
-      artifact sourcesJar
-      groupId "$ext_groupId"
-      artifactId "$ext_artifactId"
-      version "$ext_version"
-    }
-  }
-}
-
+// build a jar with source files
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
     classifier = 'sources'
@@ -33,34 +18,35 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
 }
 
 artifacts {
-    archives javadocJar
     archives sourcesJar
+    archives javadocJar
 }
 
-bintray {
-  user = System.getenv('BINTRAY_USER')
-  key = System.getenv('BINTRAY_API_KEY')
-
-  dryRun = false
-  publish = true
-
-  publications = ['MyPublication']
-  pkg {
-    repo = 'maven'
-    name = "$ext_artifactId"
-    licenses = ['Apache-2.0']
-    labels = ['android', 'gradle-plugin']
-
-    publicDownloadNumbers = true
-    vcsUrl = "$ext_vcsUrl"
-
-    version {
-      name = "$ext_version"
-      desc = "$ext_description"
-      released  = new Date()
-      gpg {
-          sign = true // Determines whether to GPG sign the files.
-      }
-    }
-  }
-}
+//
+//bintray {
+//  user = System.getenv('BINTRAY_USER')
+//  key = System.getenv('BINTRAY_API_KEY')
+//
+//  dryRun = false
+//  publish = true
+//
+//  publications = ['MyPublication']
+//  pkg {
+//    repo = 'maven'
+//    name = "$ext_artifactId"
+//    licenses = ['Apache-2.0']
+//    labels = ['android', 'gradle-plugin']
+//
+//    publicDownloadNumbers = true
+//    vcsUrl = "$ext_vcsUrl"
+//
+//    version {
+//      name = "$ext_version"
+//      desc = "$ext_description"
+//      released  = new Date()
+//      gpg {
+//          sign = true // Determines whether to GPG sign the files.
+//      }
+//    }
+//  }
+//}
