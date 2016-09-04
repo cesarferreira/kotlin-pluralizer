@@ -1,39 +1,29 @@
 <!-- ![Image](extras/logo.png) -->
-# kotlin-pluralizer
+# kotlin-pluralizer [![Build Status](https://travis-ci.org/cesarferreira/kotlin-pluralizer.svg?branch=master)](https://travis-ci.org/cesarferreira/kotlin-pluralizer)
 
 **kotlin extension** to **pluralize** and **singularize** strings!
 
-
-### Specs
-[![Build Status](https://travis-ci.org/cesarferreira/kotlin-pluralizer.svg?branch=master)](https://travis-ci.org/cesarferreira/kotlin-pluralizer)
-
-<!--
-### Featured in
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-kotlin-pluralizer-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/2361)
- [![Android Weekly](https://img.shields.io/badge/Android%20Weekly-%23200-blue.svg)](http://androidweekly.net/issues/issue-200)
- -->
-
 ### Show some :heart:
-[![GitHub stars](https://img.shields.io/github/stars/cesarferreira/kotlin-pluralizer.svg?style=social&label=Star)](https://github.com/cesarferreira/kotlin-pluralizer) [![GitHub forks](https://img.shields.io/github/forks/cesarferreira/kotlin-pluralizer.svg?style=social&label=Fork)](https://github.com/cesarferreira/kotlin-pluralizer/fork) [![GitHub watchers](https://img.shields.io/github/watchers/cesarferreira/kotlin-pluralizer.svg?style=social&label=Watch)](https://github.com/cesarferreira/kkotlin-pluralizer) [![GitHub followers](https://img.shields.io/github/followers/cesarferreira.svg?style=social&label=Follow)](https://github.com/cesarferreira/kotlin-pluralizer)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/cesarmcferreira.svg?style=social)](https://twitter.com/cesarmcferreira)
-
-
-
-Partikular
-ksingle
-specialK
-specifik
+[![GitHub followers](https://img.shields.io/github/followers/cesarferreira.svg?style=social&label=Follow)](https://github.com/cesarferreira/kotlin-pluralizer)   [![Twitter Follow](https://img.shields.io/twitter/follow/cesarmcferreira.svg?style=social)](https://twitter.com/cesarmcferreira)
 
 ## Usage
+
+**Pluralization:**
 
 ```kotlin
 "person".pluralize()           # => "people"
 "post".pluralize()             # => "posts"
-"octopus".pluralize()          # => "octopi"
 "sheep".pluralize()            # => "sheep"
-"words".pluralize()            # => "words"
-"CamelOctopus".pluralize()     # => "CamelOctopi"
 ```
+
+**Singuralization:**
+
+```kotlin
+"words".singularize()         # => "word"
+"octopi".pluralize()          # => "octopus"
+
+```
+
 
 ## Install
 
