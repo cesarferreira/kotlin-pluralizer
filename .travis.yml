@@ -1,0 +1,28 @@
+language: android
+
+android:
+  components:
+    - tools
+    - platform-tools
+    - build-tools-24.0.2
+    - extra-android-m2repository
+    - android-24
+
+jdk:
+  - oraclejdk8
+
+branches:
+  except:
+    - gh-pages
+
+notifications:
+  email: false
+
+sudo: false
+
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+    - $HOME/.gradle/native/
+    - $HOME/.gradle/daemon/native/
