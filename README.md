@@ -13,6 +13,7 @@
 "person".pluralize()           # => "people"
 "post".pluralize()             # => "posts"
 "sheep".pluralize()            # => "sheep"
+"foot".pluralize()             # => "feet"
 ```
 
 **Singuralization:**
@@ -20,7 +21,8 @@
 ```kotlin
 "words".singularize()         # => "word"
 "octopi".singularize()        # => "octopus"
-
+"people".singularize()        # => "person"
+"feet".singularize()          # => "foot"
 ```
 
 ## Install
