@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.org/cesarferreira/kotlin-pluralizer.svg?branch=master)](https://travis-ci.org/cesarferreira/kotlin-pluralizer) [![Release](https://jitpack.io/v/cesarferreira/kotlin-pluralizer.svg)](https://jitpack.io/#cesarferreira/kkotlin-pluralizer)  [ ![bintray](https://api.bintray.com/packages/cesarferreira/maven/kotlin-pluralizer/images/download.svg) ](https://bintray.com/cesarferreira/maven/kotlin-pluralizer/_latestVersion)
 
 # kotlin-pluralizer
 
 **kotlin extension** to **pluralize** and **singularize** strings!
+[![Build Status](https://travis-ci.org/cesarferreira/kotlin-pluralizer.svg?branch=master)](https://travis-ci.org/cesarferreira/kotlin-pluralizer) [![Release](https://jitpack.io/v/cesarferreira/kotlin-pluralizer.svg)](https://jitpack.io/#cesarferreira/kkotlin-pluralizer)  [ ![bintray](https://api.bintray.com/packages/cesarferreira/maven/kotlin-pluralizer/images/download.svg) ](https://bintray.com/cesarferreira/maven/kotlin-pluralizer/_latestVersion)
 
 ## Usage
 
