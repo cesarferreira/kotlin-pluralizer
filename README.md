@@ -1,10 +1,8 @@
-<!-- ![Image](extras/logo.png) -->
-# kotlin-pluralizer [![Build Status](https://travis-ci.org/cesarferreira/kotlin-pluralizer.svg?branch=master)](https://travis-ci.org/cesarferreira/kotlin-pluralizer) [![Release](https://jitpack.io/v/cesarferreira/kotlin-pluralizer.svg)](https://jitpack.io/#cesarferreira/kkotlin-pluralizer)
-
+# kotlin-pluralizer
+[![Build Status](https://travis-ci.org/cesarferreira/kotlin-pluralizer.svg?branch=master)](https://travis-ci.org/cesarferreira/kotlin-pluralizer) [![Release](https://jitpack.io/v/cesarferreira/kotlin-pluralizer.svg)](https://jitpack.io/#cesarferreira/kkotlin-pluralizer)  [ ![bintray](https://api.bintray.com/packages/cesarferreira/maven/kotlin-pluralizer/images/download.svg) ](https://bintray.com/cesarferreira/maven/kotlin-pluralizer/_latestVersion)
 
 
 **kotlin extension** to **pluralize** and **singularize** strings!
-
 
 ## Usage
 
@@ -32,14 +30,15 @@ repositories {
       maven { url "https://jitpack.io" }
  }
  dependencies {
-    compile 'com.github.cesarferreira:kotlin-pluralizer:0.2.1'
+    compile 'com.github.cesarferreira:kotlin-pluralizer:0.2.2'
  }
  ```
 
-### Show some :heart:
+## Show some love
 [![GitHub followers](https://img.shields.io/github/followers/cesarferreira.svg?style=social&label=Follow)](https://github.com/cesarferreira/kotlin-pluralizer)   [![Twitter Follow](https://img.shields.io/twitter/follow/cesarmcferreira.svg?style=social)](https://twitter.com/cesarmcferreira)
 
 ## Contributing
+
 I welcome and encourage all pull requests. It usually will take me within 24-48 hours to respond to any issue or request. Here are some basic rules to follow to ensure timely addition of your request:
   1. Match coding style (braces, spacing, etc.) This is best achieved using `CMD`+`Option`+`L` (Reformat code) on Mac (not sure for Windows) with Android Studio defaults.
   2. If its a feature, bugfix, or anything please only change code to what you specify.
@@ -53,9 +52,10 @@ I welcome and encourage all pull requests. It usually will take me within 24-48 
 
   The pluralize and singularize methods are based on the code found in the following places.
 
+  - https://github.com/rails/rails/blob/26698fb91d88dca0f860adcb80528d8d3f0f6285/activesupport/lib/active_support/inflector/inflections.rb
+
   - https://github.com/atteo/evo-inflector/blob/master/src/main/java/org/atteo/evo/inflector/English.java
   - http://www.java2s.com/Tutorial/Java/0040__Data-Type/Transformswordstosingularpluralhumanizedhumanreadableunderscorecamelcaseorordinalform.htm
-  - https://github.com/rails/rails/blob/26698fb91d88dca0f860adcb80528d8d3f0f6285/activesupport/lib/active_support/inflector/inflections.rb
 
 
 ### Created & Maintained By
