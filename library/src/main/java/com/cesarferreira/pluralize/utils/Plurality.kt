@@ -1,4 +1,4 @@
-package com.cesarferreira.library.utils
+package com.cesarferreira.pluralize.utils
 
 enum class Plurality {
     Singular,

@@ -1,6 +1,6 @@
-package com.cesarferreira.library
+package com.cesarferreira.pluralize
 
-import com.cesarferreira.library.utils.Plurality
+import com.cesarferreira.pluralize.utils.Plurality
 import java.util.regex.Pattern
 
 

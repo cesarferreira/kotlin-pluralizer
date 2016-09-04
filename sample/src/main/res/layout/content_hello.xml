@@ -12,6 +12,6 @@
 	android:paddingBottom="@dimen/activity_vertical_margin"
 	app:layout_behavior="@string/appbar_scrolling_view_behavior"
 	tools:showIn="@layout/activity_hello"
-	tools:context="com.cesarferreira.supposedlibrary.HelloActivity">
+	tools:context="com.cesarferreira.supposedlibrary.com.cesarferreira.pluralize.sample.HelloActivity">
 
 </RelativeLayout>

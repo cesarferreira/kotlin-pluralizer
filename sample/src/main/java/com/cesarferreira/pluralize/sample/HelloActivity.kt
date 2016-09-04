@@ -1,12 +1,12 @@
-package com.cesarferreira.supposedlibrary
+package com.cesarferreira.pluralize.sample
 
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.util.Log
-import com.cesarferreira.library.pluralize
-import com.cesarferreira.library.singularize
+import com.cesarferreira.pluralize.pluralize
+import com.cesarferreira.pluralize.singularize
 
 class HelloActivity : AppCompatActivity() {
 
