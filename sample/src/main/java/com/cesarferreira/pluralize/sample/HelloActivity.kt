@@ -22,7 +22,6 @@ class HelloActivity : AppCompatActivity() {
             Log.d("TAG", "person".pluralize())
             Log.d("TAG", "banana".pluralize())
             Log.d("TAG", "woman".pluralize())
-
             Log.d("TAG", "women".singularize())
 
         })

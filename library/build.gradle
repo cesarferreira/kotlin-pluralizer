@@ -10,7 +10,6 @@ buildscript {
 
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'com.github.dcendents.android-maven'
 
 android {
     compileSdkVersion 24
@@ -40,8 +39,6 @@ android {
 }
 
 dependencies {
-    compile gradleApi()
-    compile 'com.android.support:appcompat-v7:24.2.0'
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
 repositories {
