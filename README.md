@@ -55,6 +55,7 @@ I welcome and encourage all pull requests. It usually will take me within 24-48 
 
   - https://github.com/atteo/evo-inflector/blob/master/src/main/java/org/atteo/evo/inflector/English.java
   - http://www.java2s.com/Tutorial/Java/0040__Data-Type/Transformswordstosingularpluralhumanizedhumanreadableunderscorecamelcaseorordinalform.htm
+  - https://github.com/MehdiK/Humanizer.jvm
 
 
 ### Created & Maintained By
