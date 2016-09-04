@@ -20,7 +20,7 @@
 
 ```kotlin
 "words".singularize()         # => "word"
-"octopi".pluralize()          # => "octopus"
+"octopi".singularize()        # => "octopus"
 
 ```
 
