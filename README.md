@@ -1,20 +1,20 @@
 <!-- ![Image](extras/logo.png) -->
-# Kotlin-pluralizer
+# kotlin-pluralizer
 
-**Kotlin extension** to **pluralize** and **singularize** strings!
+**kotlin extension** to **pluralize** and **singularize** strings!
 
 
 ### Specs
-[![Build Status](https://travis-ci.org/cesarferreira/kKotlin-pluralizer.svg?branch=master)](https://travis-ci.org/cesarferreira/Kotlin-pluralizer)
+[![Build Status](https://travis-ci.org/cesarferreira/kotlin-pluralizer.svg?branch=master)](https://travis-ci.org/cesarferreira/kotlin-pluralizer)
 
 <!--
 ### Featured in
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Kotlin-pluralizer-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/2361)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-kotlin-pluralizer-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/2361)
  [![Android Weekly](https://img.shields.io/badge/Android%20Weekly-%23200-blue.svg)](http://androidweekly.net/issues/issue-200)
  -->
 
 ### Show some :heart:
-[![GitHub stars](https://img.shields.io/github/stars/cesarferreira/Kotlin-pluralizer.svg?style=social&label=Star)](https://github.com/cesarferreira/Kotlin-pluralizer) [![GitHub forks](https://img.shields.io/github/forks/cesarferreira/Kotlin-pluralizer.svg?style=social&label=Fork)](https://github.com/cesarferreira/Kotlin-pluralizer/fork) [![GitHub watchers](https://img.shields.io/github/watchers/cesarferreira/Kotlin-pluralizer.svg?style=social&label=Watch)](https://github.com/cesarferreira/kKotlin-pluralizer) [![GitHub followers](https://img.shields.io/github/followers/cesarferreira.svg?style=social&label=Follow)](https://github.com/cesarferreira/Kotlin-pluralizer)  
+[![GitHub stars](https://img.shields.io/github/stars/cesarferreira/kotlin-pluralizer.svg?style=social&label=Star)](https://github.com/cesarferreira/kotlin-pluralizer) [![GitHub forks](https://img.shields.io/github/forks/cesarferreira/kotlin-pluralizer.svg?style=social&label=Fork)](https://github.com/cesarferreira/kotlin-pluralizer/fork) [![GitHub watchers](https://img.shields.io/github/watchers/cesarferreira/kotlin-pluralizer.svg?style=social&label=Watch)](https://github.com/cesarferreira/kkotlin-pluralizer) [![GitHub followers](https://img.shields.io/github/followers/cesarferreira.svg?style=social&label=Follow)](https://github.com/cesarferreira/kotlin-pluralizer)  
 [![Twitter Follow](https://img.shields.io/twitter/follow/cesarmcferreira.svg?style=social)](https://twitter.com/cesarmcferreira)
 
 
@@ -46,7 +46,7 @@ I welcome and encourage all pull requests. It usually will take me within 24-48 
   2. If its a feature, bugfix, or anything please only change code to what you specify.
   3. Please keep PR titles easy to read and descriptive of changes, this will make them easier to merge :)
   4. Pull requests _must_ be made against `develop` branch. Any other branch (unless specified by the maintainers) will get rejected.
-  5. Check for existing [issues](https://github.com/cesarferreira/kotKotlin-pluralizer/issues) first, before filing an issue.  
+  5. Check for existing [issues](https://github.com/cesarferreira/kotkotlin-pluralizer/issues) first, before filing an issue.  
   6. Have fun!
 
 
