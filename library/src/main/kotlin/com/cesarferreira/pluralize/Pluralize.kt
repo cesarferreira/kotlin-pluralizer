@@ -25,7 +25,7 @@ fun String.singularize(plurality: Plurality = Plurality.Plural): String {
 
     if (this.pluralizer() != this && this + "s" != this.pluralizer() &&
             this.pluralizer().singularize() == this && this.singularizer() != this)
-        return this;
+        return this
 
     return this.singularize()
 }
@@ -34,10 +34,10 @@ private fun String.pluralizer(): String {
     if (unCountable().contains(this)) return this
     val rule = pluralizeRules().last { Pattern.compile(it.component1(), Pattern.CASE_INSENSITIVE).matcher(this).find() }
     var found = Pattern.compile(rule.component1(), Pattern.CASE_INSENSITIVE).matcher(this).replaceAll(rule.component2())
-    val endswith = exceptions().firstOrNull { this.endsWith(it.component1()) }
-    if (endswith != null) found = this.replace(endswith.component1(), endswith.component2())
-    val excep = exceptions().firstOrNull() { this.equals(it.component1()) }
-    if (excep != null) found = excep.component2()
+    val endsWith = exceptions().firstOrNull { this.endsWith(it.component1()) }
+    if (endsWith != null) found = this.replace(endsWith.component1(), endsWith.component2())
+    val exception = exceptions().firstOrNull() { this.equals(it.component1()) }
+    if (exception != null) found = exception.component2()
     return found
 }
 
@@ -45,14 +45,14 @@ private fun String.singularizer(): String {
     if (unCountable().contains(this)) {
         return this
     }
-    val excepions = exceptions().firstOrNull() { this.equals(it.component2()) }
+    val exceptions = exceptions().firstOrNull() { this.equals(it.component2()) }
 
-    if (excepions != null) {
-        return excepions.component1()
+    if (exceptions != null) {
+        return exceptions.component1()
     }
-    val endswith = exceptions().firstOrNull { this.endsWith(it.component2()) }
+    val endsWith = exceptions().firstOrNull { this.endsWith(it.component2()) }
 
-    if (endswith != null) return this.replace(endswith.component2(), endswith.component1())
+    if (endsWith != null) return this.replace(endsWith.component2(), endsWith.component1())
 
     try {
         if (singularizeRules().count {
@@ -200,5 +200,3 @@ fun singularizeRules(): List<Pair<String, String>> {
             "i$" to "us",
             "ae$" to "a")
 }
-
-
