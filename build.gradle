@@ -6,7 +6,7 @@ buildscript {
     ext {
       ext_groupId = 'com.cesarferreira'
       ext_artifactId = 'kotlin-pluralizer'
-      ext_version = '0.2.4'
+      ext_version = '0.2.5'
       ext_url = 'https://github.com/cesarferreira/kotlin-pluralizer'
       ext_vcsUrl = 'https://github.com/cesarferreira/kotlin-pluralizer.git'
       ext_description = 'Kotlin extension to pluralize and singularize strings'
