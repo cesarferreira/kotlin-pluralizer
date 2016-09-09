@@ -30,6 +30,20 @@ fun String.singularize(plurality: Plurality = Plurality.Plural): String {
     return this.singularize()
 }
 
+fun String.pluralize(count: Int): String {
+    if (count > 1)
+        return this.pluralize(Plurality.Plural)
+    else
+        return this.pluralize(Plurality.Singular)
+}
+
+fun String.singularize(count: Int): String {
+    if (count > 1)
+        return this.singularize(Plurality.Plural)
+    else
+        return this.singularize(Plurality.Singular)
+}
+
 private fun String.pluralizer(): String {
     if (unCountable().contains(this)) return this
     val rule = pluralizeRules().last { Pattern.compile(it.component1(), Pattern.CASE_INSENSITIVE).matcher(this).find() }
