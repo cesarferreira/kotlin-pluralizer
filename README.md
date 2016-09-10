@@ -43,7 +43,7 @@ repositories {
     maven { url "https://jitpack.io" }
  }
  dependencies {
-    compile 'com.github.cesarferreira:kotlin-pluralizer:0.2.6'
+    compile 'com.github.cesarferreira:kotlin-pluralizer:0.2.7'
  }
  ```
 
