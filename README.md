@@ -3,42 +3,49 @@
 
 **kotlin extension** to **pluralize** and **singularize** strings
 
-[![Build Status](https://travis-ci.org/cesarferreira/kotlin-pluralizer.svg?branch=master)](https://travis-ci.org/cesarferreira/kotlin-pluralizer) [![Release](https://jitpack.io/v/cesarferreira/kotlin-pluralizer.svg)](https://jitpack.io/#cesarferreira/kkotlin-pluralizer)  [ ![bintray](https://api.bintray.com/packages/cesarferreira/maven/kotlin-pluralizer/images/download.svg) ](https://bintray.com/cesarferreira/maven/kotlin-pluralizer/_latestVersion)
+[![Build Status](https://travis-ci.org/cesarferreira/kotlin-pluralizer.svg?branch=master)](https://travis-ci.org/cesarferreira/kotlin-pluralizer) [![Release](https://jitpack.io/v/cesarferreira/kotlin-pluralizer.svg)](https://jitpack.io/#cesarferreira/kkotlin-pluralizer)
+
+### Show some love
+[![GitHub followers](https://img.shields.io/github/followers/cesarferreira.svg?style=social&label=Follow)](https://github.com/cesarferreira/kotlin-pluralizer)   [![Twitter Follow](https://img.shields.io/twitter/follow/cesarmcferreira.svg?style=social)](https://twitter.com/cesarmcferreira)
 
 ## Usage
+
 
 **Pluralization:**
 
 ```kotlin
-"person".pluralize()           # => "people"
-"post".pluralize()             # => "posts"
-"sheep".pluralize()            # => "sheep"
-"foot".pluralize()             # => "feet"
+"person".pluralize()        # => "people"
+"post".pluralize()          # => "posts"
+"sheep".pluralize()         # => "sheep"
+"foot".pluralize()          # => "feet"
 ```
 
 **Singuralization:**
 
 ```kotlin
-"words".singularize()         # => "word"
-"octopi".singularize()        # => "octopus"
-"people".singularize()        # => "person"
-"feet".singularize()          # => "foot"
+"words".singularize()       # => "word"
+"octopi".singularize()      # => "octopus"
+"people".singularize()      # => "person"
+"feet".singularize()        # => "foot"
+```
+
+**Quantities:**
+```kotlin
+"person".pluralize(1)       # => "person"
+"person".pluralize(2)       # => "people"
 ```
 
 ## Install
 
 ```groovy
 repositories {
-      jcenter()
-      maven { url "https://jitpack.io" }
+    jcenter()
+    maven { url "https://jitpack.io" }
  }
  dependencies {
-    compile 'com.github.cesarferreira:kotlin-pluralizer:0.2.4'
+    compile 'com.github.cesarferreira:kotlin-pluralizer:0.2.6'
  }
  ```
-
-## Show some love
-[![GitHub followers](https://img.shields.io/github/followers/cesarferreira.svg?style=social&label=Follow)](https://github.com/cesarferreira/kotlin-pluralizer)   [![Twitter Follow](https://img.shields.io/twitter/follow/cesarmcferreira.svg?style=social)](https://twitter.com/cesarmcferreira)
 
 ## Contributing
 
