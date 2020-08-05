@@ -20,4 +20,9 @@ class SingularizationTest {
         assertEquals("person", "people".singularize())
     }
 
+    @Test
+    fun `Should handle in case insensitive manner`() {
+        assertEquals("goy", "Goyim".singularize())
+    }
+
 }

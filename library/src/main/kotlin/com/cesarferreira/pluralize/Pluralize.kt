@@ -50,7 +50,7 @@ private fun String.pluralizer(): String {
     var found = Pattern.compile(rule.component1(), Pattern.CASE_INSENSITIVE).matcher(this).replaceAll(rule.component2())
     val endsWith = exceptions().firstOrNull { this.endsWith(it.component1()) }
     if (endsWith != null) found = this.replace(endsWith.component1(), endsWith.component2())
-    val exception = exceptions().firstOrNull() { this.equals(it.component1()) }
+    val exception = exceptions().firstOrNull() { this.equals(it.component1(), true) }
     if (exception != null) found = exception.component2()
     return found
 }
@@ -59,7 +59,7 @@ private fun String.singularizer(): String {
     if (unCountable().contains(this.toLowerCase())) {
         return this
     }
-    val exceptions = exceptions().firstOrNull() { this.equals(it.component2()) }
+    val exceptions = exceptions().firstOrNull() { this.equals(it.component2(), true) }
 
     if (exceptions != null) {
         return exceptions.component1()
@@ -147,7 +147,8 @@ fun exceptions(): List<Pair<String, String>> {
             "noumenon" to "noumena",
             "organon" to "organa",
             "asyndeton" to "asyndeta",
-            "hyperbaton" to "hyperbata")
+            "hyperbaton" to "hyperbata",
+            "foot" to "feet")
 }
 
 fun pluralizeRules(): List<Pair<String, String>> {
@@ -176,7 +177,9 @@ fun pluralizeRules(): List<Pair<String, String>> {
             "f$" to "ves",
             "fe$" to "ves",
             "um$" to "a",
-            "on$" to "a")
+            "on$" to "a",
+            "tion" to "tions",
+            "sion" to "sions")
 }
 
 fun singularizeRules(): List<Pair<String, String>> {
