@@ -20,7 +20,7 @@
 "foot".pluralize()          # => "feet"
 ```
 
-**Singuralization:**
+**Singularization:**
 
 ```kotlin
 "words".singularize()       # => "word"
