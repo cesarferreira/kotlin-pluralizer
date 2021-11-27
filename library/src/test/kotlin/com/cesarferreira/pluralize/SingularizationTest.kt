@@ -25,4 +25,12 @@ class SingularizationTest {
         assertEquals("goy", "Goyim".singularize())
     }
 
+    @Test
+    fun `Should behave like pluralize for count larger than 1`() {
+        assertEquals("posts", "post".singularize(5))
+        assertEquals("descriptions", "description".singularize(2))
+        assertEquals("collections", "collection".singularize(-2))
+        assertEquals("versions", "version".singularize(-5))
+    }
+
 }
