@@ -1,48 +1,15 @@
 package com.cesarferreira.pluralize
 
-import com.cesarferreira.pluralize.utils.Plurality
 import java.util.regex.Pattern
 
-
-fun String.pluralize(plurality: Plurality = Plurality.Singular): String {
-    if (plurality == Plurality.Plural) return this
-
-    if (plurality == Plurality.Singular)
-        return this.pluralizer()
-
-    if (this.singularizer() != this && this.singularizer() + "s" != this &&
-            this.singularizer().pluralizer() == this && this.pluralizer() != this)
-        return this
-
-    return this.pluralizer()
-}
-
-fun String.singularize(plurality: Plurality = Plurality.Plural): String {
-
-    if (plurality == Plurality.Singular) return this
-
-    if (plurality == Plurality.Plural) return this.singularizer()
-
-    if (this.pluralizer() != this && this + "s" != this.pluralizer() &&
-            this.pluralizer().singularize() == this && this.singularizer() != this)
-        return this
-
-    return this.singularize()
-}
-
-fun String.pluralize(count: Int): String {
-    if (count > 1)
-        return this.pluralize(Plurality.Plural)
+fun String.pluralize(count: Int = 2): String {
+    return if (Math.abs(count)!= 1)
+        this.pluralizer()
     else
-        return this.pluralize(Plurality.Singular)
+        this.singularizer()
 }
 
-fun String.singularize(count: Int): String {
-    if (count > 1)
-        return this.singularize(Plurality.Plural)
-    else
-        return this.singularize(Plurality.Singular)
-}
+fun String.singularize(count: Int = 1): String = pluralize(count)
 
 private fun String.pluralizer(): String {
     if (unCountable().contains(this.toLowerCase())) return this
